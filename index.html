@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>UCB — Université Catholique de Bukavu</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">UCB</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Accueil</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">À propos</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#discover" class="nav__link">Facultés</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#place" class="nav__link">Campus</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__dark">
+                        <span class="change-theme-name"></span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
+
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/UCB_campus_Bugabo.jpg/1280px-UCB_campus_Bugabo.jpg" 
+                     onerror="this.src='assets/img/home1.jpg'" 
+                     alt="Campus UCB Bukavu" class="home__img">
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__data-subtitle">Bukavu, RD Congo</span>
+                        <h1 class="home__data-title">À la quête de <br> <b>l'excellence, <br> au service</b> de la communauté</h1>
+                        <a href="#about" class="button">Découvrir</a>
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/ucbukavu2016/" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ucbukavu/" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/ucbukavu" target="_blank" class="home__social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__info">
+                        <div>
+                            <span class="home__info-title">2e meilleure université de la RDC</span>
+                            <a href="#discover" class="button button--flex button--link home__info-button">
+                                Voir plus <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__info-overlay">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bukavu_sur_le_lac_Kivu.jpg/640px-Bukavu_sur_le_lac_Kivu.jpg"
+                                 onerror="this.src='assets/img/home2.jpg'"
+                                 alt="Bukavu lac Kivu" class="home__info-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">Plus de 35 ans <br> d'excellence académique</h2>
+                        <p class="about__description">Fondée en 1989 par l'archevêque de Bukavu, l'Université Catholique de Bukavu forme les leaders de demain. Avec 7 facultés, plus de 3 766 étudiants et un réseau international de partenaires, l'UCB est la référence de l'enseignement supérieur au Sud-Kivu et dans toute la RDC.
+                        </p>
+                        <a href="https://ucbukavu.ac.cd" target="_blank" class="button">Site officiel UCB</a>
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Etudiants_UCB.jpg/400px-Etudiants_UCB.jpg"
+                                 onerror="this.src='assets/img/about1.jpg'"
+                                 alt="Étudiants UCB" class="about__img-one">
+                        </div>
+
+                        <div class="about__img-overlay">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Bukavu_vue_du_lac.jpg/480px-Bukavu_vue_du_lac.jpg"
+                                 onerror="this.src='assets/img/about2.jpg'"
+                                 alt="Bukavu vue lac Kivu" class="about__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--==================== DISCOVER (FACULTÉS) ====================-->
+            <section class="discover section" id="discover">
+                <h2 class="section__title">Découvrez nos <br> 7 facultés</h2>
+                
+                <div class="discover__container container swiper-container">
+                    <div class="swiper-wrapper">
+
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/discover1.jpg"
+                                 alt="Médecine UCB" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Médecine</h2>
+                                <span class="discover__description">Hôpital d'enseignement de 500 lits</span>
+                            </div>
+                        </div>
+
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/discover2.jpg"
+                                 alt="Droit UCB" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Droit</h2>
+                                <span class="discover__description">Bac, Master & Doctorat</span>
+                            </div>
+                        </div>
+
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/discover3.jpg"
+                                 alt="Sciences Économiques UCB" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Économie & Gestion</h2>
+                                <span class="discover__description">DEA & Doctorat en économie</span>
+                            </div>
+                        </div>
+
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/discover4.jpg"
+                                 alt="Agronomie UCB" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Agronomie</h2>
+                                <span class="discover__description">Doctorat en agro-écologie</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== EXPERIENCE ====================-->
+            <section class="experience section">
+                <h2 class="section__title">L'UCB en <br> quelques chiffres</h2>
+
+                <div class="experience__container container grid">
+                    <div class="experience__content grid">
+                        <div class="experience__data">
+                            <h2 class="experience__number">35+</h2>
+                            <span class="experience__description">Années <br> d'histoire</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">7</h2>
+                            <span class="experience__description">Facultés <br> ouvertes</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">5 019</h2>
+                            <span class="experience__description">Étudiants <br> inscrits</span>
+                        </div>
+                    </div>
+
+                    <div class="experience__img grid">
+                        <div class="experience__overlay">
+                            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=80"
+                                 onerror="this.src='assets/img/experience1.jpg'"
+                                 alt="Campus universitaire UCB" class="experience__img-one">
+                        </div>
+                        
+                        <div class="experience__overlay">
+                            <img src="assets/img/discover3.jpg"
+                                 alt="Bibliothèque UCB" class="experience__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== VIDEO ====================-->
+            <section class="video section">
+                <h2 class="section__title">Visite virtuelle <br> de l'UCB</h2>
+
+                <div class="video__container container">
+                    <p class="video__description">Découvrez le campus de l'Université Catholique de Bukavu, 
+                        ses infrastructures modernes et sa communauté estudiantine dynamique.
+                    </p>
+
+                    <div class="video__content">
+                        <video id="video-file">
+                            <source src="assets/video/video.mp4" type="video/mp4">
+                        </video>
+
+                        <button class="button button--flex video__button" id="video-button">
+                            <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PLACES (CAMPUS) ====================-->
+            <section class="place section" id="place">
+                <h2 class="section__title">Nos espaces <br> académiques</h2>
+
+                <div class="place__container container grid">
+
+                    <div class="place__card">
+                        <img src="assets/img/discover1.jpg"
+                             alt="Campus Bugabo UCB" class="place__img">
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">5,0</span>
+                            </span>
+                            <div class="place__data">
+                                <h3 class="place__title">Campus Bugabo</h3>
+                                <span class="place__subtitle">Av. de la Mission, Kadutu</span>
+                                <span class="place__price">Principal</span>
+                            </div>
+                        </div>
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <div class="place__card">
+                        <img src="assets/img/medecine.jpg"
+                             alt="Faculté de Médecine UCB" class="place__img">
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,9</span>
+                            </span>
+                            <div class="place__data">
+                                <h3 class="place__title">Faculté de Médecine</h3>
+                                <span class="place__subtitle">Hôpital de référence</span>
+                                <span class="place__price">500 lits</span>
+                            </div>
+                        </div>
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <div class="place__card">
+                        <img src="assets/img/discover3.jpg"
+                             alt="Bibliothèque UCB" class="place__img">
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>
+                            </span>
+                            <div class="place__data">
+                                <h3 class="place__title">Centre d'excellence</h3>
+                                <span class="place__subtitle">Bibliothèque & Recherche</span>
+                                <span class="place__price">Formation continue</span>
+                            </div>
+                        </div>
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <div class="place__card">
+                        <img src="assets/img/discover4.jpg"
+                             alt="Informatique UCB" class="place__img">
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>
+                            </span>
+                            <div class="place__data">
+                                <h3 class="place__title">Sciences Informatiques</h3>
+                                <span class="place__subtitle">Labo & Technologies</span>
+                                <span class="place__price">Dept. Informatique</span>
+                            </div>
+                        </div>
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <div class="place__card">
+                        <img src="assets/img/UCBukavu_-_Campus_de_Kalambo.jpg"
+                             alt="École doctorale UCB" class="place__img">
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">5,0</span>
+                            </span>
+                            <div class="place__data">
+                                <h3 class="place__title">École Doctorale</h3>
+                                <span class="place__subtitle">Droit — Économie — Agronomie</span>
+                                <span class="place__price">PhD</span>
+                            </div>
+                        </div>
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </section>
+
+            <!--==================== SUBSCRIBE ====================-->
+            <section class="subscribe section">
+                <div class="subscribe__bg">
+                    <div class="subscribe__container container">
+                        <h2 class="section__title subscribe__title">Rejoignez <br> la communauté UCB</h2>
+                        <p class="subscribe__description">Inscrivez-vous pour recevoir les actualités, 
+                            les concours d'admission et les événements de l'UCB.
+                        </p>
+                      <form action="" class="subscribe__form">
+    <input type="email" placeholder="Entrez votre email" class="subscribe__input">
+    <a href="https://ucbukavu.ac.cd/" target="_blank" class="button">
+        S'inscrire
+    </a>
+</form>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ÉTUDIANTS — CAROUSEL (infinite-carousel-animation) ====================-->
+            <section class="carousel-section" id="students">
+                <h2 class="section__title">Les visages <br> de l'UCB</h2>
+
+                <div class="carousel">
+
+                    <!-- Rangée 1 -->
+                    <div class="carousel__content" id="carousel-1">
+                        <article class="carousel__card">
+                            <div class="carousel__image">
+                                <img src="assets/img/perfil-1.png" alt="Baciza Bulonze Alexian" class="carousel__img">
+                            </div>
+                            <h3 class="carousel__name">Baciza Bulonze Alexian</h3>
+                            <div class="carousel__rating">
+                                <div class="carousel__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <h3 class="carousel__number">5.0</h3>
+                            </div>
+                            <p>L'UCB m'a appris que l'excellence n'est pas un point d'arrivée mais un état d'esprit permanent.</p>
+                        </article>
+
+                        <article class="carousel__card">
+                            <div class="carousel__image">
+                                <img src="assets/img/perfil-2.png" alt="Babunga Cinamula Israël" class="carousel__img">
+                            </div>
+                            <h3 class="carousel__name">Babunga Cinamula Israël</h3>
+                            <div class="carousel__rating">
+                                <div class="carousel__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <h3 class="carousel__number">5.0</h3>
+                            </div>
+                            <p>Étudier ici, c'est rejoindre une famille qui croit sincèrement au développement du Congo.</p>
+                        </article>
+
+                        <article class="carousel__card">
+                            <div class="carousel__image">
+                                <img src="assets/img/perfil-3.png" alt="Ansima Mulumeoderhwa Julienne" class="carousel__img">
+                            </div>
+                            <h3 class="carousel__name">Ansima Mulumeoderhwa Julienne</h3>
+                            <div class="carousel__rating">
+                                <div class="carousel__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <h3 class="carousel__number">5.0</h3>
+                            </div>
+                            <p>L'UCB forge des leaders capables de transformer leur communauté avec intégrité et vision.</p>
+                        </article>
+
+                        <article class="carousel__card">
+                            <div class="carousel__image">
+                                <img src="assets/img/perfil-4.png" alt="Iragi Nshagali Valéry" class="carousel__img">
+                            </div>
+                            <h3 class="carousel__name">Iragi Nshagali Valéry</h3>
+                            <div class="carousel__rating">
+                                <div class="carousel__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <h3 class="carousel__number">5.0</h3>
+                            </div>
+                            <p>La rigueur académique ici prépare réellement aux défis du monde professionnel congolais.</p>
+                        </article>
+
+                        <article class="carousel__card">
+                            <div class="carousel__image">
+                                <img src="assets/img/perfil-1.png" alt="David Kizibisha" class="carousel__img">
+                            </div>
+                            <h3 class="carousel__name">David Kizibisha</h3>
+                            <div class="carousel__rating">
+                                <div class="carousel__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <h3 class="carousel__number">5.0</h3>
+                            </div>
+                            <p>Former des médecins engagés pour le peuple congolais, c'est la mission que l'UCB réalise chaque jour.</p>
+                        </article>
+
+                        <article class="carousel__card">
+                            <div class="carousel__image">
+                                <img src="assets/img/perfil-2.png" alt="Awezaye Cirimwami Grappe" class="carousel__img">
+                            </div>
+                            <h3 class="carousel__name">Awezaye Cirimwami Grappe</h3>
+                            <div class="carousel__rating">
+                                <div class="carousel__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <h3 class="carousel__number">5.0</h3>
+                            </div>
+                            <p>L'UCB m'a donné les outils concrets pour contribuer au développement agricole du Kivu.</p>
+                        </article>
+
+                        <article class="carousel__card">
+                            <div class="carousel__image">
+                                <img src="assets/img/perfil-3.png" alt="Busime Cubaka Bernadette" class="carousel__img">
+                            </div>
+                            <h3 class="carousel__name">Busime Cubaka Bernadette</h3>
+                            <div class="carousel__rating">
+                                <div class="carousel__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <h3 class="carousel__number">5.0</h3>
+                            </div>
+                            <p>Une université qui pousse véritablement à dépasser ses limites et à toujours viser plus haut.</p>
+                        </article>
+
+                        <article class="carousel__card">
+                            <div class="carousel__image">
+                                <img src="assets/img/perfil-4.png" alt="Kujiramungu Lugerero Trish" class="carousel__img">
+                            </div>
+                            <h3 class="carousel__name">Kujiramungu Lugerero Trish</h3>
+                            <div class="carousel__rating">
+                                <div class="carousel__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <h3 class="carousel__number">5.0</h3>
+                            </div>
+                            <p>Chaque projet ici est une opportunité réelle de construire le Bukavu de demain.</p>
+                        </article>
+                    </div>
+
+                    <!-- Rangée 2 (reverse) -->
+                    <div class="carousel__content carousel__reverse" id="carousel-2">
+                        <article class="carousel__card">
+                            <div class="carousel__image">
+                                <img src="assets/img/perfil-2.png" alt="Batende Wasso Jeremie" class="carousel__img">
+                            </div>
+                            <h3 class="carousel__name">Batende Wasso Jeremie</h3>
+                            <div class="carousel__rating">
+                                <div class="carousel__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <h3 class="carousel__number">5.0</h3>
+                            </div>
+                            <p>L'UCB, c'est la preuve vivante que l'excellence académique est possible ici au Congo.</p>
+                        </article>
+
+                        <article class="carousel__card">
+                            <div class="carousel__image">
+                                <img src="assets/img/perfil-3.png" alt="Faida Ndagano Esther" class="carousel__img">
+                            </div>
+                            <h3 class="carousel__name">Faida Ndagano Esther</h3>
+                            <div class="carousel__rating">
+                                <div class="carousel__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <h3 class="carousel__number">5.0</h3>
+                            </div>
+                            <p>L'UCB forme des soignants qui comprennent vraiment les besoins profonds de leur peuple.</p>
+                        </article>
+
+                        <article class="carousel__card">
+                            <div class="carousel__image">
+                                <img src="assets/img/perfil-4.png" alt="Imidi Assani Hakim" class="carousel__img">
+                            </div>
+                            <h3 class="carousel__name">Imidi Assani Hakim</h3>
+                            <div class="carousel__rating">
+                                <div class="carousel__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <h3 class="carousel__number">5.0</h3>
+                            </div>
+                            <p>Une formation solide dans une ambiance qui valorise le travail acharné et l'intégrité.</p>
+                        </article>
+
+                        <article class="carousel__card">
+                            <div class="carousel__image">
+                                <img src="assets/img/perfil-1.png" alt="Amina Mabikane Wivine" class="carousel__img">
+                            </div>
+                            <h3 class="carousel__name">Amina Mabikane Wivine</h3>
+                            <div class="carousel__rating">
+                                <div class="carousel__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <h3 class="carousel__number">5.0</h3>
+                            </div>
+                            <p>À l'UCB, on apprend à servir avant de prétendre diriger. Une leçon de vie précieuse.</p>
+                        </article>
+
+                        <article class="carousel__card">
+                            <div class="carousel__image">
+                                <img src="assets/img/fataki.webp" alt="Fataki Ilonge" class="carousel__img">
+                            </div>
+                            <h3 class="carousel__name">Fataki Ilonge</h3>
+                            <div class="carousel__rating">
+                                <div class="carousel__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <h3 class="carousel__number">5.0</h3>
+                            </div>
+                            <p>L'université qui transforme concrètement les jeunes du Kivu en acteurs du changement.</p>
+                        </article>
+
+                        <article class="carousel__card">
+                            <div class="carousel__image">
+                                <img src="assets/img/perfil-3.png" alt="Sadiki Saleh Benedi" class="carousel__img">
+                            </div>
+                            <h3 class="carousel__name">Sadiki Saleh Benedi</h3>
+                            <div class="carousel__rating">
+                                <div class="carousel__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <h3 class="carousel__number">5.0</h3>
+                            </div>
+                            <p>Les professeurs de l'UCB enseignent avec passion et une vraie connaissance du terrain congolais.</p>
+                        </article>
+
+                        <article class="carousel__card">
+                            <div class="carousel__image">
+                                <img src="assets/img/perfil-4.png" alt="Kisi Kalembu Patient" class="carousel__img">
+                            </div>
+                            <h3 class="carousel__name">Kisi Kalembu Patient</h3>
+                            <div class="carousel__rating">
+                                <div class="carousel__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <h3 class="carousel__number">5.0</h3>
+                            </div>
+                            <p>L'UCB m'a convaincu que la technologie peut réellement transformer notre région.</p>
+                        </article>
+
+                        <article class="carousel__card">
+                            <div class="carousel__image">
+                                <img src="assets/img/perfil-1.png" alt="Baciza Bulonze Alexian" class="carousel__img">
+                            </div>
+                            <h3 class="carousel__name">Baciza Bulonze Alexian</h3>
+                            <div class="carousel__rating">
+                                <div class="carousel__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                                <h3 class="carousel__number">5.0</h3>
+                            </div>
+                            <p>L'UCB m'a appris que l'excellence n'est pas un point d'arrivée mais un état d'esprit permanent.</p>
+                        </article>
+                    </div>
+
+                </div>
+            </section>
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h3 class="footer__title">UCB</h3>
+                        <p class="footer__description">Université Catholique de Bukavu <br> 
+                            Super Lacus Ac Montes Splendens <br>
+                            Bugabo 02, Av. de la Mission, Bukavu
+                        </p>
+                        <div>
+                            <a href="https://www.facebook.com/ucbukavu2016/" target="_blank" class="footer__social">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a href="https://twitter.com/ucbukavu" target="_blank" class="footer__social">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/ucbukavu/" target="_blank" class="footer__social">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://bit.ly/3eeXW40" target="_blank" class="footer__social">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Facultés</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="#discover" class="footer__link">Médecine</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#discover" class="footer__link">Droit</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#discover" class="footer__link">Économie & Gestion</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#discover" class="footer__link">Agronomie</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#discover" class="footer__link">Informatique</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">À propos</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="#about" class="footer__link">Notre histoire</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#place" class="footer__link">Nos campus</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#students" class="footer__link">Nos étudiants</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Contact</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="tel:+243993031592" class="footer__link">(+243) 993 031 592</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="tel:+243991585658" class="footer__link">(+243) 991 585 658</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="mailto:info@ucbukavu.ac.cd" class="footer__link">info@ucbukavu.ac.cd</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="https://ucbukavu.ac.cd" target="_blank" class="footer__link">ucbukavu.ac.cd</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; 2026 Université Catholique de Bukavu. Tous droits réservés.</p>
+                    <div class="footer__terms">
+                        <a href="#" class="footer__terms-link">Politique de confidentialité</a>
+                        <a href="#" class="footer__terms-link">Mentions légales</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+
+        <!--=============== CAROUSEL INFINITE (exact carousel resource) ===============-->
+        <script>
+            const tracks = document.querySelectorAll('.carousel__content')
+            tracks.forEach(track => {
+                const cards = [...track.children]
+                for (const card of cards) {
+                    track.appendChild(card.cloneNode(true))
+                }
+            })
+        </script>
+    </body>
+</html>
